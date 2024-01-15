@@ -13,6 +13,7 @@ function Home() {
             console.log("joined-user in room ", roomId);
             navigate(`/room/${roomId}`)
         });
+      // return () => socket.disconnect();
     },[socket])
 
     const handleRoom = () => {
